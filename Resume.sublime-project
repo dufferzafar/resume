@@ -1,4 +1,15 @@
 {
+    "build_systems":
+    [
+        {
+            "file_regex": "^(…*?):([0-9]*):?([0-9]*)",
+            "name": "TeX Builder",
+            "path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/",
+            "selector": "text.tex.latex",
+            "shell": true,
+            "cmd": ["latexmk -silent -pdf -pdflatex='pdflatex -file-line-error' $file_name"]
+        }
+    ],
     "folders":
     [
         {
