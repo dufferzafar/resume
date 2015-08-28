@@ -1,7 +1,7 @@
 default: compile
 
 compile:
-	@pdflatex -file-line-error -halt-on-error -interaction=nonstopmode resume.tex
+	@latexmk -silent -pdf -pdflatex='pdflatex -file-line-error' resume.tex
 
 view:
 	@qpdfview resume.pdf
