@@ -1,0 +1,18 @@
+{
+    "folders":
+    [
+        {
+            "file_exclude_patterns":
+            [
+                "*.aux",
+                "*.out"
+            ],
+            "folder_exclude_patterns":
+            [
+                "_Help/**"
+            ],
+            "follow_symlinks": true,
+            "path": "."
+        }
+    ],
+}
