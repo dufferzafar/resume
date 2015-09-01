@@ -6,58 +6,20 @@
 \usepackage[scale=0.85]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
 
-\firstname{Shadab}
-\lastname{Zafar}
-\title{}
+% Used for showing some links in color
+\usepackage{xcolor}
 
-\address
-    {H.No. 139, Street No. 7, Jafarabad, Delhi - 110053}{India}
-\phone
-    [mobile]{+91 8285275415}
-\email
-    {dufferzafar0@gmail.com}
-\homepage
-    {dufferzafar.me}
-\social
-    [github][github.com/dufferzafar]{github.com/dufferzafar}
+\input{sections/bio.tex}
 
 \begin{document}
 \maketitle
 
 \section{Experience}
 
-    \cventry{Dec'14 -- Jan'15}
-        {Backend Intern}
-        {Cube26}
-        {}
-        {}
-        {Work primarily focused on developing a similarity based image searching algorithm in Python.}
-        \vspace*{0.2\baselineskip}
-
-    \cventry{Jun'14 -- Aug'14}
-        {Student Developer}
-        {Google Summer of Code}
-        {MetaBrainz Foundation}
-        {}
-        {Project was to add some features to a Python based tool and create a new website for it. For the web part, I used Python (with Flask) for the backend and Bootstrap to ease the pain of frontend development. To make GUI based additions to the tool, I had to understand the workings of the Qt framework and its PyQt bindings.}
-        \vspace*{0.2\baselineskip}
+    \input{sections/experience.tex}
 
 \section{Projects}
 
-    \cventry{Apr'14 -- Nov'14}
-        {Idea Management Application}
-        {}
-        {\scriptsize Python (Flask), MySQL (SQLAlchemy), Bootstrap}
-        {}
-        {Developed a website that helps you manage your ideas and share them with people.}
-        \vspace*{0.2\baselineskip}
-
-    \cventry{Sep'13 -- Mar'14}
-        {Cryptex}
-        {Algorythm'14}
-        {\scriptsize PHP, Bootstrap}
-        {}
-        {Created a web based code breaking challenge for our annual fest -- Algorythm.}
-        \vspace*{0.2\baselineskip}
+    \input{sections/projects.tex}
 
 \end{document}
