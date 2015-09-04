@@ -7,7 +7,7 @@
             "path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/",
             "selector": "text.tex.latex",
             "shell": true,
-            "cmd": ["latexmk -silent -pdf -pdflatex='pdflatex -file-line-error' $file_name"]
+            "cmd": ["latexmk -f -silent -pdf -pdflatex='pdflatex -file-line-error -interaction=nonstopmode' $file_name"]
         }
     ],
     "folders":
@@ -16,7 +16,10 @@
             "file_exclude_patterns":
             [
                 "*.aux",
-                "*.out"
+                "*.out",
+                "*.fls",
+                "*.log",
+                "*.fdb_latexmk",
             ],
             "folder_exclude_patterns":
             [
