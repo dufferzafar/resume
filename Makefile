@@ -10,3 +10,7 @@ clean:
 	@rm *.aux
 	@rm *.log
 	@rm *.out
+
+.PHONY: watch
+watch:
+	@./watch
