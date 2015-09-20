@@ -7,8 +7,12 @@ My resume in TeX.
 
 ### Issues
 
+* Casual style on left code.
+
 * Add some space between Project title and it's description.
 * Some part is italics, and then suddenly the next part isn't. Looks Odd, IMO.
+
+* Display links to code.
 
 ### Future
 
