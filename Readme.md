@@ -1,7 +1,8 @@
 
 # Resume
 
-My resume in TeX.
+
+![Screenshot](screenshot.png)
 
 ## Todos
 
