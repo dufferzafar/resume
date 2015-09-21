@@ -1,3 +1,8 @@
+# Only build branch contains the output
+*.pdf
+
+build/
+
 ###TeX###
 
 ## Core latex/pdflatex auxiliary files:
