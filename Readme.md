@@ -9,12 +9,13 @@ My LaTeX based resume. Uses the [moderncv](https://www.ctan.org/pkg/moderncv) te
 
 ## Todos
 
-* Figure out how to have two separate versions, one for Desktop & the other for Print.
-  * Print version won't have any URLs etc.
+* Figure out how to have two separate versions
+    * for Desktop & for Print.
+    * Print version won't have any URLs etc.
 
-* Use `pandoc` to generate *decent* markdown
+* Use `pandoc` to generate *decent* markdown.
 
-* Color / B & W Modes ?
+* Color / B & W Modes
 
 * Figure out how to track the edited moderncv theme with git
 
@@ -26,3 +27,4 @@ My LaTeX based resume. Uses the [moderncv](https://www.ctan.org/pkg/moderncv) te
 
 * Display links to code.
 
+[Google Viewer Link](https://docs.google.com/viewer?url=https://github.com/dufferzafar/resume/raw/build/Shadab%20Zafar.pdf)
