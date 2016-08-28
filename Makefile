@@ -11,9 +11,16 @@ view:
 
 # Clean all latex crap
 clean:
-	@rm *.aux
-	@rm *.log
-	@rm *.out
+	@rm -f *.aux
+	@rm -f *.fls
+	@rm -f *.log
+	@rm -f *.out
+	@rm -f *.fdb_latexmk
+
+# Print all URLs being used
+.PHONY: urls
+urls:
+	@./ls-urls
 
 # Run the watch shell script that
 # watches the current directory for changes and builds the PDF
