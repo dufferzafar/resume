@@ -1,32 +1,41 @@
 {
-    "build_systems":
-    [
-        {
-            "file_regex": "^(…*?):([0-9]*):?([0-9]*)",
-            "name": "TeX Builder",
-            "path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/",
-            "selector": "text.tex.latex",
-            "shell": true,
-            "cmd": ["latexmk -f -silent -pdf -pdflatex='pdflatex -file-line-error -interaction=nonstopmode' $file_name"]
-        }
-    ],
-    "folders":
-    [
-        {
-            "file_exclude_patterns":
-            [
-                "*.aux",
-                "*.out",
-                "*.fls",
-                "*.log",
-                "*.fdb_latexmk",
-            ],
-            "folder_exclude_patterns":
-            [
-                "_Help/**"
-            ],
-            "follow_symlinks": true,
-            "path": "."
-        }
-    ],
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"latexmk -f -silent -pdf -pdflatex='pdflatex -file-line-error -interaction=nonstopmode' $file_name"
+			],
+			"file_regex": "^(…*?):([0-9]*):?([0-9]*)",
+			"name": "TeX Builder",
+			"path": "$PATH:/usr/texbin:/usr/local/bin:/opt/local/bin:/usr/local/",
+			"selector": "text.tex.latex",
+			"shell": true
+		},
+		{
+			"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+			"name": "Anaconda Python Builder",
+			"selector": "source.python",
+			"shell_cmd": "python -u \"$file\""
+		}
+	],
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.aux",
+				"*.out",
+				"*.fls",
+				"*.log",
+				"*.fdb_latexmk"
+			],
+			"folder_exclude_patterns":
+			[
+				"_Help/**"
+			],
+			"follow_symlinks": true,
+			"path": "."
+		}
+	]
 }
