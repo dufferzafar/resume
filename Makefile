@@ -1,4 +1,4 @@
-default: compile
+default: clean compile
 
 compile:
 	@latexmk -silent -pdf -pdflatex='pdflatex -interaction=nonstopmode' resume.tex
@@ -7,7 +7,7 @@ error:
 	@latexmk -pdf -pdflatex='pdflatex -file-line-error -interaction=errorstopmode' resume.tex
 
 view:
-	@qpdfview resume.pdf
+	@xdg-open resume.pdf
 
 # Clean all latex crap
 clean:
