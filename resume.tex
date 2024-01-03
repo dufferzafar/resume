@@ -1,9 +1,9 @@
 \documentclass[12pt, a4paper, sans, obeyspaces, unicode]{moderncv}
 
-\moderncvstyle{casual}
+\moderncvstyle{classic}
 \moderncvcolor{blue}
 
-\usepackage[scale=0.85]{geometry}
+\usepackage[scale=0.93]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
 
 % Used for showing some links in color
@@ -14,21 +14,18 @@
 \begin{document}
 \maketitle
 
-\vspace{0.5cm}
-\section{Work}
+% Remove some extra whitespace
+\vspace*{-1cm}
 
+\section{Work}
     \input{sections/work.tex}
 
 \section{Projects}
-
     \input{sections/projects.tex}
 
 \section{Education}
-
     \input{sections/education.tex}
 
-\section{Communication}
-
-    \input{sections/communication.tex}
+\input{sections/extras.tex}
 
 \end{document}
