@@ -5,14 +5,15 @@
     {}
     {
         \begin{itemize}
-            \item Designed \& implemented a C++ based real time risk analytics engine
-            processing updates on the entire firms portfolio \&
-            providing a SQL API by leveraging an in-memory DuckDB store.
-            \item Created a C++ based autocomplete API 
-            \item Consolidated ad-hoc scripts 
-            \& data analysis tools into a maintainable Python/Streamlit dashboard.
-            \item Real time risk analytics.
-            \item Real time risk analytics.
+            \item Designed \& implemented a C++ based real-time risk analytics engine
+            processing over 200K updates/sec on the entire firm's portfolio.
+            % \& providing a SQL API for live data by leveraging an in-memory DuckDB store.
+            Leveraged an in-memory DuckDB store to provide a live SQL API \& ClickHouse for historical timeseries based usecases.
+            \item Improved performance of a C++ based trade monitoring application by multi-threading \& removing lock-contention resulting in reduced web API response times from $\sim$100ms to $\sim$10ms.
+            \item Owned \& maintained an anomaly detection framework that aggregates live trade metrics \& alerts when they deviate from historical averages stored in a multi terabyte RocksDB instance.
+            \item Created a C++ based autocomplete \& search API that powers a trading frontend application.
+            \item Managed various web-based Risk Monitoring applications written in Python/Django/Flask etc.
+            \item Consolidated ad-hoc scripts \& data analysis tools into a maintainable Python/Streamlit dashboard.
         \end{itemize}
     }
     \vspace*{0.2\baselineskip}
@@ -36,7 +37,8 @@
     {The Honeynet Project}
     {}
     {
-        Python 2 to 3 port of an HTTP proxy tool
+        Python 2 to 3 port
+        and improved test coverage of an HTTP proxy tool
         (\href{http://github.com/mitmproxy/mitmproxy/}{mitmproxy})
         % Also improved it's
         % code coverage,
